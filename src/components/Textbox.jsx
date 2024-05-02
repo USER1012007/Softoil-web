@@ -1,11 +1,19 @@
 import '../css/Textbox.css';
 
-function Textbox(){
+function Textbox(props){
+
+  const { title, content} = props.data;
+
   return(
     <>
       <div className="Textbox">
-        <div>
-
+        <div className="TextboxContent">
+          <div>
+            {title}
+          </div>
+          <div>
+            {content}
+          </div>
         </div>
       </div>
     </>

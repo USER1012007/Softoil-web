@@ -1,7 +1,9 @@
 .Textbox{
   display: grid;
+  padding: 17vh 1rem;
   justify-content: space-between;
   overflow: hidden;
+  padding: 9vh 1rem;
   padding-top: 9vh;
   padding-right: 1rem;
   padding-bottom: 9vh;
@@ -21,7 +23,6 @@
 .Textbox div{
   display: flex;
   justify-content: center;
-  letter-spacing: 1px;
   width: 100%;
 }
 

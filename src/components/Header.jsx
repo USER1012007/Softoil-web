@@ -14,7 +14,7 @@ function Header() {
                       <a href="#">Soluciones</a>
                       <a href="#">Afiliaciones</a>
                       <a href="#">Compañía</a>
-                      <a href="#">Contactos</a>
+                      <a href="#">Valores</a>
                       <a href="#">Demo</a>
                   </div>
               </div>
