@@ -1,5 +1,6 @@
 import logo from "../Img/soft.png"
 import BorderImage from "../Img/marginSoft.png";
+import '../css/menu.css';
 
 function Header() {
 

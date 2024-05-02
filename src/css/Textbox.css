@@ -1,0 +1,27 @@
+.Textbox{
+  display: grid;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-top: 9vh;
+  padding-right: 1rem;
+  padding-bottom: 9vh;
+  padding-left: 1rem;
+  color: #ffffff;
+  background-color: #313131;
+  border-radius: 50px;
+  margin: 30px;
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.Textbox.active{
+  opacity: 1;
+}
+
+.Textbox div{
+  display: flex;
+  justify-content: center;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
