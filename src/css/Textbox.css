@@ -1,7 +1,6 @@
 .Textbox{
   display: grid;
   padding: 17vh 1rem;
-  justify-content: space-between;
   overflow: hidden;
   padding: 9vh 1rem;
   padding-top: 9vh;
@@ -20,9 +19,21 @@
   opacity: 1;
 }
 
-.Textbox div{
-  display: flex;
-  justify-content: center;
-  width: 100%;
+li {
+  float: left;
+  margin-right: 10px;
 }
 
+.TextboxTitle{
+  justify-content: center;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.TextboxContent div{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 100%;
+  height: auto;
+}

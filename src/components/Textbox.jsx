@@ -1,17 +1,17 @@
 import '../css/Textbox.css';
 
 function Textbox(props){
-
-  const { title, content} = props.data;
+  
+  const { title, content, dataTarget } = props.data;
 
   return(
     <>
-      <div className="Textbox">
-        <div className="TextboxContent">
-          <div>
+      <div className="Textbox" id={dataTarget}>
+        <div>
+          <div className="TextboxTitle">
             {title}
           </div>
-          <div>
+          <div className='TextboxContent'>
             {content}
           </div>
         </div>
