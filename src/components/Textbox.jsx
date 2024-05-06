@@ -6,7 +6,8 @@ function Textbox(props){
 
   return(
     <>
-      <div className="Textbox" id={dataTarget}>
+      <span id={dataTarget}></span>
+      <div className="Textbox">
         <div>
           <div className="TextboxTitle">
             {title}

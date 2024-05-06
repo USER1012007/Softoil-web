@@ -10,13 +10,17 @@
   color: #ffffff;
   background-color: #313131;
   border-radius: 50px;
-  margin: 30px;
   opacity: 1;
   transition: opacity 1s ease-in;
+  margin: 30px;
 }
 
 .Textbox.active{
   opacity: 1;
+}
+
+span{
+  display: inline-block;
 }
 
 li {
@@ -28,12 +32,55 @@ li {
   justify-content: center;
   display: flex;
   margin-bottom: 40px;
+  max-width: 1300px;
 }
 
-.TextboxContent div{
+.TextboxContent{
   display: flex;
   justify-content: space-around;
   list-style-type: none;
   width: 100%;
   height: auto;
 }
+
+.tabla{
+  position: relative;
+}
+.inner{
+  width: fit-content;
+  display: flex;
+  gap: 1rem;
+  animation: loop 10s linear infinite;
+}
+
+.tag{
+  display: flex;
+  align-items: center;
+  gap: 0 0.2rem;
+  color: #ffffff;
+  font-size: 0.9rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 
+    0 0.1rem 0.2rem black,
+    0 0.1rem 0.5rem black,
+    0 0.2rem 1.5rem black;
+}
+
+@keyframes loop{
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.celda {
+  border: 1px solid black;
+  padding: 10px;
+  width: 343px;
+  height: 200px;
+}
+

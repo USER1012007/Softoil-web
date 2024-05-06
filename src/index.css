@@ -14,6 +14,12 @@
   box-sizing: border-box;
 }
 
+@layer {
+  * {
+    scrollbar-color: #006fb4 #c05b32;
+  }
+}
+
 header{
   max-height: 3em;
 }
@@ -24,6 +30,7 @@ body{
   overflow-x: hidden;
   font-size: clamp(16px, 1.2rem, 24px); 
 }
+
 
 footer {
   padding: 10px;
@@ -41,10 +48,16 @@ a:hover {
 }
 
 .Biglogo {
-  position: relative;
-  width: auto;
-  height: auto;
-  display: grid;
-  align-content: center;
+  width: 100%;
+  max-width: 100%;
 }
+.Biglogo img{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+
+
 
