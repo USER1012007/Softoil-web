@@ -2,25 +2,16 @@
   display: grid;
   padding: 17vh 1rem;
   overflow: hidden;
-  padding: 9vh 1rem;
-  padding-top: 9vh;
-  padding-right: 1rem;
-  padding-bottom: 9vh;
-  padding-left: 1rem;
-  color: #ffffff;
-  background-color: #313131;
+  color: #000;
   border-radius: 50px;
   opacity: 1;
   transition: opacity 1s ease-in;
   margin: 30px;
+  background: #f6f8fc;
 }
 
 .Textbox.active{
   opacity: 1;
-}
-
-span{
-  display: inline-block;
 }
 
 li {
@@ -43,44 +34,9 @@ li {
   height: auto;
 }
 
-.tabla{
-  position: relative;
-}
-.inner{
-  width: fit-content;
-  display: flex;
-  gap: 1rem;
-  animation: loop 10s linear infinite;
-}
-
-.tag{
-  display: flex;
-  align-items: center;
-  gap: 0 0.2rem;
-  color: #ffffff;
-  font-size: 0.9rem;
-  padding: 0.7rem 1rem;
-  border-radius: 0.4rem;
-  box-shadow: 
-    0 0.1rem 0.2rem black,
-    0 0.1rem 0.5rem black,
-    0 0.2rem 1.5rem black;
-}
-
-@keyframes loop{
-  0% {
-    transform: translateX(0);
+@media (prefers-color-scheme: light) {
+ .Textbox{
+    background-color: #313131;
   }
-
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.celda {
-  border: 1px solid black;
-  padding: 10px;
-  width: 343px;
-  height: 200px;
 }
 

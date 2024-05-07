@@ -1,5 +1,4 @@
 import Textbox from "./Textbox.jsx";
-import SoftLogo from "../Img/soft.png";
 import Natgas from "../Img/natgas-logo.png";
 import Tomza from "../Img/gasTomza-logo.png";
 import Kansas from "../Img/Kansas-logo.png";
@@ -22,15 +21,7 @@ function Body(){
 
   const Afiliations = {
     title: <div><h1>Afiliaciones</h1></div>,
-    content:  <div className="tabla">
-      <div className="inner">
-        <div className="tag"><img src={Natgas} className="celda"/></div>
-        <div className="tag"><img src={Tomza} className="celda"/></div>
-        <div className="tag"><img src={Kansas} className="celda"/></div>
-        <div className="tag"><img src={Repsol} className="celda"/></div>
-        <div className="tag"><img src={Glencore} className="celda"/></div>
-      </div>
-  </div>,
+    content:  <div className="tabla">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</div>,
     dataTarget: "Afiliations"
   };
 
@@ -47,10 +38,7 @@ function Body(){
   };
   return(
     <>
-      <div id="Home">
-        <div className="Biglogo">
-          <img src={SoftLogo} />
-        </div>
+      <div>
         <div>
           <Textbox data={Products}/>
           <Textbox data={Solutions}/>
