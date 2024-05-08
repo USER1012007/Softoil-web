@@ -30,7 +30,7 @@ li {
 }
 
 .transparentImg {
-  filter: invert(0.5);
+  mix-blend-mode: multiply;
 }
 
 .Afiliations {
