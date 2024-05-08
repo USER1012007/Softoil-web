@@ -1,14 +1,26 @@
 import '../css/Textbox.css';
+import React, { useEffect } from 'react';
 
-function Textbox(props){
-  
+
+function Textbox(props) {
+
   const { title, content, dataTarget } = props.data;
 
-  return(
+  const fadeInElements = document.querySelectorAll(".Afiliations");
+
+
+  const handleScroll = () => {
+    fadeInElementsIfVisible(fadeInElements);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+  return (
     <>
       <span id={dataTarget}></span>
       <div className="Textbox">
-        <div>
           <div className="TextboxTitle">
             {title}
           </div>
@@ -16,19 +28,18 @@ function Textbox(props){
             {content}
           </div>
         </div>
-      </div>
     </>
   );
 }
 
-const fadeInElements = document.querySelectorAll(".Textbox");
 
 function fadeInElementsIfVisible(fadeElements) {
   fadeElements.forEach(function (element) {
+    console.log(isElementInViewport(element))
     if (isElementInViewport(element)) {
-      element.classList.add("active");
-    } else {
       element.classList.remove("active");
+    } else {
+      element.classList.add("active");
     }
   });
 }
@@ -43,11 +54,5 @@ function isElementInViewport(el) {
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
-
-fadeInElementsIfVisible(fadeInElements);
-
-document.addEventListener("scroll", function () {
-  fadeInElementsIfVisible(fadeInElements);
-});
 
 export default Textbox

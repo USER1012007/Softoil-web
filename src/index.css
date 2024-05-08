@@ -14,12 +14,6 @@
   box-sizing: border-box;
 }
 
-@layer {
-  * {
-    scrollbar-color: #006fb4 #c05b32;
-  }
-}
-
 header{
   max-height: 3em;
 }
@@ -40,7 +34,7 @@ footer {
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #000;
   text-decoration: inherit;
 }
 
