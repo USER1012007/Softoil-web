@@ -16,6 +16,8 @@
 
 header{
   max-height: 3em;
+
+  user-select: none;
 }
 
 body{
@@ -24,6 +26,8 @@ body{
   overflow-x: hidden;
   font-size: clamp(16px, 1.2rem, 24px); 
   background: #e2e6eb;
+  transition: all 0.3s ease;
+
 }
 
 
@@ -41,18 +45,6 @@ a {
 a:hover {
   color: #535bf2;
 }
-
-.Biglogo {
-  width: 100%;
-  max-width: 100%;
-}
-.Biglogo img{
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-}
-
 
 
 

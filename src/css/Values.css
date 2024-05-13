@@ -1,0 +1,49 @@
+.gridAbout {
+  display: grid;
+  grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+  grid-template-rows: auto;
+  grid-template-areas: "g1 g2 g3";
+}
+
+.grid1 {
+  grid-area: g1;
+  padding: 0 10px;
+}
+
+.grid2 {
+  grid-area: g2;
+  padding: 0 10px;
+}
+
+.grid3 {
+  grid-area: g3;
+  padding: 0 10px;
+}
+
+.grid1 p {
+  font-size: 21px !important;
+  text-align: center;
+  margin: 0;
+}
+
+.grid2 p {
+  font-size: 21px !important;
+  text-align: center;
+  margin: 0;
+}
+
+.grid3 p {
+  font-size: 21px !important;
+  text-align: center;
+  margin: 0;
+}
+
+.grid3 ul li {
+  font-size: 18px !important;
+  text-align: center;
+}
+
+.grid3 ul {
+  list-style-type: none;
+  padding: 0;
+}

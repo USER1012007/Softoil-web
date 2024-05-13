@@ -1,6 +1,17 @@
 import '../css/ColorSwitchbtn.css';
+// import Cookies from 'react-cookie';
 
 function ColorSwitchbtn() {
+
+  // const cookies = new Cookies();
+  //
+  // cookies.set('username', 'Juan Perez', { path: '/' });
+  //   const username = cookies.get('username');
+  //
+  // console.log(username); // Imprimirá "Juan Perez"
+
+
+
 
   const bodyElement = document.body;
   const computedStyle = getComputedStyle(bodyElement);
@@ -8,9 +19,11 @@ function ColorSwitchbtn() {
   const handleCheckboxChange = (event) => {
     const backgroundColor = computedStyle.backgroundColor;
     const navbar = document.querySelector(".menu");
-    const popup = document.querySelector(".popup-window");
+    const popupwindow = document.querySelector(".popup-window");
     const textBox = document.querySelectorAll('.Textbox');
     const links = document.getElementsByTagName('a');
+    const popup = document.querySelector('.popup');
+    const burgerLine = document.querySelector('.burgerLine');
 
     textBox.forEach(element => {
       if (backgroundColor === 'rgb(226, 230, 235)') {
@@ -19,7 +32,9 @@ function ColorSwitchbtn() {
         element.style.backgroundColor = '#151a1f';
         element.style.color = '#ffffff';
         navbar.style.backgroundColor = '#151a1f';
-        popup.style.backgroundColor = '#151a1f';
+        popupwindow.style.backgroundColor = '#151a1f';
+        popup.style.setProperty('--burger-bg', '#151a1f');
+        popup.style.setProperty('--burger-color', '#f6f8fc');
         for (let i = 0; i < links.length; i++) {
           links[i].style.color = '#ffffff';
         }
@@ -29,7 +44,9 @@ function ColorSwitchbtn() {
         element.style.backgroundColor = '#f6f8fc';
         element.style.color = '#1b1b1b';
         navbar.style.backgroundColor = '#f6f8fc';
-        popup.style.backgroundColor = '#f6f8fc';
+        popupwindow.style.backgroundColor = '#f6f8fc';
+        popup.style.setProperty('--burger-bg', 'rgba(0, 0, 0, .15)');
+        popup.style.setProperty('--burger-color', '#333');
         for (let i = 0; i < links.length; i++) {
           links[i].style.color = '#1b1b1b';
         }

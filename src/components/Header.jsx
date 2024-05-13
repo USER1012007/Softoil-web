@@ -20,9 +20,9 @@ function Header() {
             <label className="popup">
               <input className="none" type="checkbox" />
               <div className="burger" tabIndex="0">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span className="burgerLine"></span>
+                <span className="burgerLine"></span>
+                <span className="burgerLine"></span>
               </div>
               <nav className="popup-window">
                 <legend>Softoil</legend>
