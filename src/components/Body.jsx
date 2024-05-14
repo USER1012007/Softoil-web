@@ -1,11 +1,9 @@
+import React from 'react';
 import Textbox from "./Textbox.jsx";
 import ValuesBox from "./Values.jsx";
 import SolutionsBox from "./SolutionsBox.jsx";
 import Inicio from "./Inicio.jsx";
-import natgas from "../Img/natgas-logo.svg";
-import kansas from "../Img/Kansas-logo.svg";
-import repsol from "../Img/Repsol-logo.png";
-import glencore from "../Img/Glencore-logo.jpg";
+import AfiliationsBox from "./Afiliations.jsx";
 import tomza from "../Img/gasTomza-logo.png";
 
 function Body() {
@@ -24,29 +22,7 @@ function Body() {
 
   const Afiliations = {
     title: <div><h1>Afiliaciones</h1></div>,
-    content: <div className="Afiliations">
-      <div>
-        <img src={natgas} />
-      </div>
-      <div className="Img-x"></div>
-      <div>
-        <img className="transparentImg" src={kansas} />
-      </div>
-      <div className="Img-x"></div>
-      <div>
-        <img src={repsol} />
-      </div>
-
-      <div className="Img-x"></div>
-      <div>
-        <img className="transparentImg" src={glencore} />
-      </div>
-      <div className="Img-x"></div>
-      <div>
-        <img src={tomza} />
-      </div>
-      <div className="Img-x"></div>
-    </div>,
+    content: <AfiliationsBox elements={tomza} />,
     dataTarget: "Afiliations"
   };
 
