@@ -28,7 +28,7 @@ function Header() {
                 <legend>Softoil</legend>
                 <ul className="list">
                   <li>
-                    <a data-target="Products" onClick={() => handleLinkClick("Products")}>Inicio</a>
+                    <a data-target="Products" onClick={() => handleLinkClick("Products")}>Nosotros</a>
                   </li>
                   <li>
                     <a data-target="Solutions" onClick={() => handleLinkClick("Solutions")}>Soluciones</a>
@@ -54,7 +54,7 @@ function Header() {
           <div className="menu">
             <div className="list">
               <img src={logo} />
-              <a data-target="Products" onClick={() => handleLinkClick("Products")}>Inicio</a>
+              <a data-target="Products" onClick={() => handleLinkClick("Products")}>Nosotros</a>
               <a data-target="Solutions" onClick={() => handleLinkClick("Solutions")} >Soluciones</a>
               <a data-target="Afiliations" onClick={() => handleLinkClick("Afiliations")} >Afiliaciones</a>
               <a data-target="Values" onClick={() => handleLinkClick("Values")} >Valores</a>

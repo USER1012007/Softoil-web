@@ -8,6 +8,8 @@
 .grid1 {
   grid-area: g1;
   padding: 0 10px;
+  border: 1px solid #0080c1;
+  border-radius: 50px;
 }
 
 .grid2 {
@@ -23,7 +25,7 @@
 .grid1 p {
   font-size: 21px !important;
   text-align: center;
-  margin: 0;
+  padding: 20px;
 }
 
 .grid2 p {

@@ -1,6 +1,7 @@
 import Textbox from "./Textbox.jsx";
 import ValuesBox from "./Values.jsx";
 import SolutionsBox from "./SolutionsBox.jsx";
+import Inicio from "./Inicio.jsx";
 import natgas from "../Img/natgas-logo.svg";
 import kansas from "../Img/Kansas-logo.svg";
 import repsol from "../Img/Repsol-logo.png";
@@ -64,6 +65,7 @@ function Body() {
     <>
       <div>
         <div>
+          <Inicio/>
           <Textbox data={Products} />
           <Textbox data={Solutions} />
           <Textbox data={Afiliations} />
