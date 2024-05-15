@@ -22,14 +22,13 @@
   justify-items: center;
 }
 
-
 @media only screen and (max-width: 800px) {
 
   .Afiliations {
     width: 80%;
     justify-content: center;
-    grid-template-rows: 33.33% 33.33% 33.33% 0% 33.33%;
-    grid-template-columns: 50% 1px 50% 1px;
+    grid-template-rows: 33.33% 33.33% 33.33% 3vh 33.33%;
+    grid-template-columns: 50% 3vh 50% 3vh;
     grid-template-areas:
       "a b " "c x d" "x e x" "x x x" "x";
   }

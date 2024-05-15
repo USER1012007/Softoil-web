@@ -16,7 +16,7 @@ function Body() {
   };
 
   const Worths = {
-    title: <label className='colorRed'><h1>NUESTROS VALORES</h1></label>,
+    title: <label className='colorRed worth'><h1>NUESTROS VALORES</h1></label>,
     content: <WorthsBox />,
     dataTarget: "Worths"
   };
@@ -41,16 +41,12 @@ function Body() {
 
   return (
     <>
-      <div>
-        <div>
           <Inicio />
           <Textbox data={AboutUs} />
           <Textbox data={Worths} />
           <Textbox data={Solutions} />
           <Textbox data={Afiliations} />
           <Textbox data={Contact} />
-        </div>
-      </div>
     </>
   );
 }

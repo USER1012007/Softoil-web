@@ -6,7 +6,8 @@
   border-radius: 50px;
   opacity: 1;
   transition: opacity 1s ease-in;
-  margin: 30px;
+  width: 94%;
+  margin: 30px auto;
   background: #f6f8fc;
   border: 1px solid #0080c1;
 }
@@ -17,7 +18,8 @@ li {
 
 .TextboxTitle {
   display: flex;
-  margin-bottom: 40px;
+  font-size: 2vw;
+  padding-bottom: 2vh;
 }
 
 .TextboxContent {
@@ -33,7 +35,6 @@ li {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 28px !important;
   margin: 0;
 }
 
@@ -48,6 +49,14 @@ li {
   background-clip: text;
   color: transparent;
 }
-.title{
+
+.title {
   font-size: 2.5em !important;
+}
+
+@media only screen and (max-width: 1199px) {
+
+  .TextboxTitle {
+    font-size: 4vw !important;
+  }
 }

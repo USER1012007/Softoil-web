@@ -1,14 +1,27 @@
 .aboutUs h1 {
-  padding: 30px;
-  font-size: 4vw !important;
+  padding-bottom: 2vh;
+  font-size: 2.5vw;
   text-align: center;
 }
 
 .aboutUs {
-  padding: 0 10%;
+  width: 85%;
+  display: grid;
+  justify-items: center;
 }
 
 .aboutUs p {
   text-align: justify;
-  font-size: 2.5vw !important;
+  font-size: 1.7vw;
+  width: 80%;
+}
+
+@media only screen and (max-width: 1199px) {
+
+  p{
+    font-size: 4vw !important;
+  }
+  .aboutUs h1{
+    font-size: 5vw !important;
+  }
 }

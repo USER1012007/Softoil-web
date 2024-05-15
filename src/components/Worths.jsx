@@ -20,14 +20,18 @@ function Worths() {
           </p>
         </div>
         <div className="grid3">
-          <p><b>[Valores]</b></p>
-          <ul>
-            <li>Innovación</li>
-            <li>Excelencia</li>
-            <li>Diferencia</li>
-            <li>Responsabilidad</li>
-            <li>Lealtad</li>
-          </ul>
+          <div className="gridWorth">
+            <p><b>[Valores]</b></p>
+            <div>
+              <ul>
+                <li>Innovación</li>
+                <li>Excelencia</li>
+                <li>Diferencia</li>
+                <li>Responsabilidad</li>
+                <li>Lealtad</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </>

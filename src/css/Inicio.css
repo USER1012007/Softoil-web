@@ -1,0 +1,148 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+}
+
+.refi2 {
+  width: 100%;
+  filter: drop-shadow(10px 8px 4px #165d8f);
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.logo {
+  width: 100%;
+  filter: drop-shadow(6px 4px 2px #165d8f);
+  z-index: -1;
+}
+
+@media screen and (min-width: 915px) {
+
+  .gridPrincipalHome {
+    display: grid;
+    height: 85vh;
+    width: 100%;
+    grid-template-columns: 12.5% auto 12.5%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "gf0 gf2 gf4"
+      "gf0 gf3 gf4";
+  }
+
+  .gf0 {
+    grid-area: gf0;
+    width: 100%;
+  }
+
+  .gf0 img {
+    width: 100%;
+  }
+
+  .gf1 {
+    grid-area: gf1;
+    display: none !important;
+  }
+
+  .gf2 {
+    grid-area: gf2;
+  }
+
+  .gf3 {
+    grid-area: gf3;
+  }
+
+  #typed {
+    display: none;
+  }
+
+  .gf4 {
+    grid-area: gf4;
+    width: 100%;
+    display: grid;
+    align-content: end;
+  }
+
+  .gf4 img {
+    width: 100%;
+    rotate: 180deg;
+    z-index: -1000;
+  }
+
+}
+
+@media screen and (max-width: 914px) {
+
+  .gridPrincipalHome {
+
+    display: grid;
+    height: 100dvh !important;
+    width: 100%;
+    grid-template-columns: 25% auto 25%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "gf0 gf1 gf4"
+      "gf0 gf2 gf4"
+      "gf0 gf3 gf4";
+  }
+
+  .gf0 {
+    grid-area: gf0;
+    width: 100%;
+  }
+
+  .gf0 img {
+    width: 100%;
+  }
+
+  .gf1 {
+    grid-area: gf1;
+    z-index: -1;
+  }
+
+  .gf2 {
+    grid-area: gf2;
+  }
+
+  .gf3 {
+    grid-area: gf3;
+    z-index: -1;
+  }
+
+  #typed {
+    display: none;
+  }
+
+  #type {
+    text-align: center;
+    background-image: linear-gradient(to left,
+        #45465d,
+        #233864,
+        #1a5585,
+        #097ab3,
+        #1ea8d9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 28px !important;
+    margin: 0;
+  }
+
+  .refi2 {
+    width: 90%;
+  }
+
+  .gf4 {
+    grid-area: gf4;
+    width: 100%;
+    display: grid;
+    align-content: end;
+  }
+
+  .gf4 img {
+    width: 100%;
+    rotate: 180deg;
+    z-index: -1000;
+  }
+}

@@ -1,38 +1,84 @@
 .gridAbout {
   display: grid;
   justify-content: center;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "grid1 grid2" "grid3 grid3";
   gap: 10px;
+}
+
+.gridAbout p {
+  padding-bottom: 2vh;
+  font-size: 1.7vw;
+  text-align: center;
+}
+
+.gridAbout li {
+  font-size: 1.7vw;
+  text-align: center;
 }
 
 .gridAbout div {
   border-radius: 50px;
-  border: 1px solid #0080c1;
   padding: 20px;
 }
 
-.grid1 p {
-  font-size: 21px !important;
-  text-align: center;
+.grid1 {
+  grid-area: grid1;
+  border: 1px solid #0080c1;
 }
 
-.grid2 p {
-  font-size: 21px !important;
-  text-align: center;
-  margin: 0;
+.grid2 {
+  grid-area: grid2;
+  border: 1px solid #0080c1;
 }
 
-.grid3 p {
-  font-size: 21px !important;
-  text-align: center;
-  margin: 0;
+.grid3 {
+  grid-area: grid3;
+  display: grid;
+  justify-items: center;
+  padding: 0 !important;
 }
 
-.grid3 ul li {
-  font-size: 18px !important;
-  text-align: center;
+.gridWorth {
+  width: 50%;
+  border: 1px solid #0080c1;
 }
 
-.grid3 ul {
+.gridWorth div {
+  display: grid;
+  padding: 0 !important;
+  justify-items: center;
+}
+
+.gridWorth div ul {
+  display: grid;
+  justify-items: center;
+}
+
+ul {
   list-style-type: none;
-  padding: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+
+  p,
+  li {
+    font-size: 4vw !important;
+  }
+}
+
+@media only screen and (max-width: 619px) {
+
+  .gridAbout {
+
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    grid-template-columns: 100%;
+    grid-template-areas: "grid1" "grid2" "grid3";
+    gap: 10px;
+  }
+
+  .gridWorth{
+    width: 100%;
+  }
 }

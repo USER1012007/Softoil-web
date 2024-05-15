@@ -4,7 +4,6 @@ import repsol from "../Img/Repsol-logo.png";
 import glencore from "../Img/Glencore-logo.png";
 import tomza from "../Img/Tomza-logo.png";
 import '../css/Afiliations.css';
-import { useEffect } from "react";
 
 function Afiliations() {
 
