@@ -57,6 +57,16 @@
     display: none;
   }
 
+  #type {
+    text-align: center;
+    background-image: linear-gradient(to right, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2.5vw;
+    margin: 0;
+  }
+
   .gf4 {
     grid-area: gf4;
     width: 100%;

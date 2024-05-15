@@ -14,6 +14,7 @@
 .Afiliations img {
   width: 80%;
   object-fit: cover !important;
+  margin: 30px;
 }
 
 .Afiliations div {
@@ -37,11 +38,7 @@
 @media only screen and (max-width: 412px) {
 
   .Afiliations {
-    grid-template-rows: 20% 0% 20% 0% 20% 0% 20% 0% 20% 0%;
+    grid-template-rows: 20% 4vh 20% 4vh 20% 3vh 20% 3vh 20% 0%;
     grid-template-columns: 100%;
-
   }
-}
-.tomza{
-  background: red;
 }

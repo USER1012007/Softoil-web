@@ -28,7 +28,7 @@ function Afiliations() {
         </div>
         <div className="Img-x"></div>
         <div>
-          <img id="GlencoreFilter" className="transparentImgsvg" src={tomza} />
+          <img id="GlencoreFilter" src={tomza} className="transparentImgsvg" />
         </div>
         <div className="Img-x"></div>
       </div>
