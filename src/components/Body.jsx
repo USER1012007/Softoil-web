@@ -5,7 +5,7 @@ import SolutionsBox from "./SolutionsBox.jsx";
 import Inicio from "./Inicio.jsx";
 import AfiliationsBox from "./Afiliations.jsx";
 import AboutUsBox from './AboutUs.jsx';
-import tomza from "../Img/gasTomza-logo.png";
+import tomza from "../Img/Tomza-logo.png";
 
 function Body() {
 
@@ -25,10 +25,10 @@ function Body() {
     title: <label className='colorBlue'><h1>SOLUCIONES</h1></label>,
     content: <SolutionsBox />,
     dataTarget: "Solutions"
-  }
+  };
 
   const Afiliations = {
-    title: <label className='colorRed'><h1>AFILIACIONES</h1></label>,
+    title: <label className='colorRed'><h1>CLIENTES</h1></label>,
     content: <AfiliationsBox elements={tomza} />,
     dataTarget: "Afiliations"
   };

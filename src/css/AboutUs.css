@@ -1,13 +1,14 @@
 .aboutUs h1 {
   padding: 30px;
-  font-size: 2.5em !important;
+  font-size: 4vw !important;
+  text-align: center;
 }
 
 .aboutUs {
-  padding: 0 200px;
+  padding: 0 10%;
 }
 
 .aboutUs p {
   text-align: justify;
-  font-size: 2em !important;
+  font-size: 2.5vw !important;
 }

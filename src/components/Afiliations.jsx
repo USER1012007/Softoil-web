@@ -1,17 +1,12 @@
 import natgas from "../Img/natgas-logo.svg";
 import kansas from "../Img/Kansas-logoBlack.png";
 import repsol from "../Img/Repsol-logo.png";
-import glencore from "../Img/Glencore-logo.jpg";
-import tomza from "../Img/gasTomza-logo.png";
+import glencore from "../Img/Glencore-logo.png";
+import tomza from "../Img/Tomza-logo.png";
 import '../css/Afiliations.css';
-import Aos from "aos";
 import { useEffect } from "react";
 
 function Afiliations() {
-
-  useEffect(() => {
-    Aos.init({duration: 3000});
-  }, []);
 
   return (
     <>
@@ -30,11 +25,11 @@ function Afiliations() {
 
         <div className="Img-x"></div>
         <div>
-          <img className="transparentImg" src={glencore} />
+          <img id="GlencoreFilter" src={glencore} />
         </div>
         <div className="Img-x"></div>
         <div>
-          <img src={tomza} />
+          <img id="GlencoreFilter" className="transparentImgsvg" src={tomza} />
         </div>
         <div className="Img-x"></div>
       </div>

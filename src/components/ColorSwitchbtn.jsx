@@ -13,17 +13,20 @@ function ColorSwitchbtn() {
     const links = document.getElementsByTagName('a');
     const popup = document.querySelector('.popup');
     const burgerLine = document.querySelector('.burgerLine');
+    const glencoreFilter = document.querySelectorAll("#GlencoreFilter");
 
     textBox.forEach(element => {
       if (backgroundColor === 'rgb(226, 230, 235)') {
         // Hacer modo oscuro
-        bodyElement.style.backgroundColor = "rgb(49, 49, 49)";
-        element.style.backgroundColor = '#151a1f';
+        bodyElement.style.backgroundColor = "#151a1f";
+        element.style.backgroundColor = '#1A1A21';
         element.style.color = '#ffffff';
-        navbar.style.backgroundColor = '#151a1f';
+        navbar.style.backgroundColor = '#1A1A21';
         popupwindow.style.backgroundColor = '#151a1f';
         popup.style.setProperty('--burger-bg', '#151a1f');
         popup.style.setProperty('--burger-color', '#f6f8fc');
+        glencoreFilter[0].classList.add("transparentImgsvg");
+        glencoreFilter[1].classList.remove("transparentImgsvg");
         for (let i = 0; i < links.length; i++) {
           links[i].style.color = '#ffffff';
         }
@@ -39,6 +42,8 @@ function ColorSwitchbtn() {
         for (let i = 0; i < links.length; i++) {
           links[i].style.color = '#1b1b1b';
         }
+        glencoreFilter[0].classList.remove("transparentImgsvg");
+        glencoreFilter[1].classList.add("transparentImgsvg");
       }
     });
   };
