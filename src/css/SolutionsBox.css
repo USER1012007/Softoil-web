@@ -1,62 +1,9 @@
-.green {
-  background-image: linear-gradient(to left,
-      #45465d,
-      #233864,
-      #1a5585,
-      #097ab3,
-      #1ea8d9);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.green h1 {
-  background-image: linear-gradient(to left,
-      #45465d,
-      #233864,
-      #1a5585,
-      #097ab3,
-      #1ea8d9);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
 section {
   padding: 20px;
   min-height: calc(100vh - 135px);
   border: 1px solid #bbb;
   border-radius: 5px;
 }
-
-#green_h1 h1 {
-  text-align: start !important;
-}
-
-.green {
-  background-image: linear-gradient(to left,
-      #45465d,
-      #233864,
-      #1a5585,
-      #097ab3,
-      #1ea8d9);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.green h1 {
-  background-image: linear-gradient(to left,
-      #45465d,
-      #233864,
-      #1a5585,
-      #097ab3,
-      #1ea8d9);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
 .SolutionSection * {
   margin: 0;
   padding: 0;
@@ -1027,4 +974,12 @@ button.swiper-pagination-bullet {
 
 #label_h1 h1 {
   text-align: start;
+}
+
+.Solutions div {
+  display: grid;
+  height: 80%;
+  width: 33.3%;
+  border: 1px solid #0080c1;
+  border-radius: 50px;
 }

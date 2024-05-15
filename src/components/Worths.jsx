@@ -1,6 +1,6 @@
-import "../css/Values.css";
+import "../css/Worths.css";
 
-function Values() {
+function Worths() {
   return (
     <>
       <div className="gridAbout">
@@ -34,4 +34,4 @@ function Values() {
   );
 }
 
-export default Values
+export default Worths

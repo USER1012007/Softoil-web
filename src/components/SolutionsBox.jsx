@@ -38,7 +38,6 @@ function SolutionsBox() {
   return (
     <>
       <section>
-        <label id="label_h1" className="green"><h1>SOLUCIONES</h1></label>
         <div className="SolutionSection">
           <div className="slide-container swiper">
             <div className="slide-content">

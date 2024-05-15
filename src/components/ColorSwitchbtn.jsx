@@ -1,17 +1,6 @@
 import '../css/ColorSwitchbtn.css';
-// import Cookies from 'react-cookie';
 
 function ColorSwitchbtn() {
-
-  // const cookies = new Cookies();
-  //
-  // cookies.set('username', 'Juan Perez', { path: '/' });
-  //   const username = cookies.get('username');
-  //
-  // console.log(username); // Imprimirá "Juan Perez"
-
-
-
 
   const bodyElement = document.body;
   const computedStyle = getComputedStyle(bodyElement);
@@ -56,16 +45,32 @@ function ColorSwitchbtn() {
   return (
     <>
       <div className="colorMode">
-        <input type="checkbox" id="checkboxInput" onChange={handleCheckboxChange} />
-        <label htmlFor="checkboxInput" className="toggleSwitch">
-
-          <div className="speaker"><svg className="icon icon-sun" fill="none" height="24" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="24"><circle cx="12" cy="12" r="5"></circle><line x1="12" x2="12" y1="1" y2="3"></line><line x1="12" x2="12" y1="21" y2="23"></line><line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line><line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line><line x1="1" x2="3" y1="12" y2="12"></line><line x1="21" x2="23" y1="12" y2="12"></line><line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line><line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line></svg></div>
-
-          <div className="mute-speaker"> <svg className="icon icon-moon" viewBox="0 0 24 24"><path d="m12.3 4.9c.4-.2.6-.7.5-1.1s-.6-.8-1.1-.8c-4.9.1-8.7 4.1-8.7 9 0 5 4 9 9 9 3.8 0 7.1-2.4 8.4-5.9.2-.4 0-.9-.4-1.2s-.9-.2-1.2.1c-1 .9-2.3 1.4-3.7 1.4-3.1 0-5.7-2.5-5.7-5.7 0-1.9 1.1-3.8 2.9-4.8zm2.8 12.5c.5 0 1 0 1.4-.1-1.2 1.1-2.8 1.7-4.5 1.7-3.9 0-7-3.1-7-7 0-2.5 1.4-4.8 3.5-6-.7 1.1-1 2.4-1 3.8-.1 4.2 3.4 7.6 7.6 7.6z"></path></svg></div>
+        <label className="container floating-btn">
+          <input type="checkbox" id="themeButton" className="floating-btn " onChange={handleCheckboxChange} />
+          <svg
+            viewBox="0 0 384 512"
+            height="1em"
+            xmlns="http://www.w3.org/2000/svg"
+            className="moon"
+          >
+            <path
+              d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
+            ></path>
+          </svg>
+          <svg
+            viewBox="0 0 512 512"
+            height="1em"
+            xmlns="http://www.w3.org/2000/svg"
+            className="sun"
+          >
+            <path
+              d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"
+            ></path>
+          </svg>
         </label>
       </div>
     </>
   );
 }
 
-export default ColorSwitchbtn
+export default ColorSwitchbtn;

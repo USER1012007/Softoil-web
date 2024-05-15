@@ -28,7 +28,7 @@ function Inicio() {
 
   return (
     <>
-      <section id="home">
+      <section>
         <div className="gridPrincipalHome">
           <div className="gf0">
             <img src={marco} alt="Marco1_SoftOil" />

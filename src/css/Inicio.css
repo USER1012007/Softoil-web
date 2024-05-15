@@ -1,4 +1,3 @@
-
 @media screen {
 
   .whiteDiv {
@@ -54,11 +53,11 @@
     animation: keyframes-fill 0.5s;
   }
 
-  input:checked ~ .moon {
+  input:checked~.moon {
     display: none;
   }
 
-  input:checked ~ .sun {
+  input:checked~.sun {
     display: block;
   }
 
@@ -264,29 +263,35 @@
     grid-area: g1;
     padding: 0 10px;
   }
+
   .grid2 {
     grid-area: g2;
     padding: 0 10px;
   }
+
   .grid3 {
     grid-area: g3;
     padding: 0 10px;
   }
+
   .grid1 p {
     font-size: 21px !important;
     text-align: center;
     margin: 0;
   }
+
   .grid2 p {
     font-size: 21px !important;
     text-align: center;
     margin: 0;
   }
+
   .grid3 p {
     font-size: 21px !important;
     text-align: center;
     margin: 0;
   }
+
   .grid3 ul li {
     font-size: 18px !important;
     text-align: center;
@@ -335,6 +340,7 @@
     position: relative;
     box-sizing: border-box;
   }
+
   .toggle input[type="checkbox"] {
     position: absolute;
     left: 0;
@@ -345,12 +351,14 @@
     cursor: pointer;
     opacity: 0;
   }
+
   .toggle label {
     position: relative;
     display: flex;
     align-items: center;
     box-sizing: border-box;
   }
+
   .toggle label:before {
     content: "";
     width: 70px;
@@ -378,16 +386,18 @@
     transition: 0.2s ease-in-out;
   }
 
-  .toggle input[type="checkbox"]:checked + label:before {
+  .toggle input[type="checkbox"]:checked+label:before {
     box-shadow: inset 30px 0 0 #ffeb00;
   }
-  .toggle input[type="checkbox"]:checked + label:after {
+
+  .toggle input[type="checkbox"]:checked+label:after {
     box-shadow: inset 0 0 0 2px #fff;
     background: #ffbc00;
     left: 39px;
     top: 8px;
     border: 2px dashed #fff;
   }
+
   .eliminar {
     display: grid;
     justify-content: center;
@@ -398,10 +408,10 @@
   .floating-btn {
     display: none !important;
   }
+
   h1 {
     text-align: center;
     font-size: 72px !important;
-    margin: 0 !important;
   }
 
   p {
@@ -414,6 +424,7 @@
   .floating-btn {
     display: none !important;
   }
+
   .gridPrincipalHome {
     display: grid;
     height: 85vh;
@@ -424,37 +435,46 @@
       "gf0 gf2 gf4"
       "gf0 gf3 gf4";
   }
+
   .gf0 {
     grid-area: gf0;
     width: 100%;
   }
+
   .gf0 img {
     width: 100%;
   }
+
   .gf1 {
     grid-area: gf1;
     display: none !important;
   }
+
   .gf2 {
     grid-area: gf2;
   }
+
   .gf3 {
     grid-area: gf3;
   }
+
   .gf4 {
     grid-area: gf4;
     width: 100%;
     display: grid;
     align-content: end;
   }
+
   .gf4 img {
     width: 100%;
     rotate: 180deg;
     z-index: -1000;
   }
+
   .logo {
     display: none;
   }
+
   html {
     min-height: 100vh;
     min-width: 100vh;
@@ -468,6 +488,7 @@
   nav span {
     display: none !important;
   }
+
   nav a {
     display: none !important;
   }
@@ -475,7 +496,6 @@
   h1 {
     text-align: center;
     font-size: 48px;
-    margin: 0 !important;
   }
 
   .p {
@@ -486,54 +506,6 @@
     font-size: 24px;
   }
 
-  #label_h1 h1 {
-    text-align: start;
-  }
-
-  label {
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-  label h1 {
-    background-image: linear-gradient(to right, #ff8a00, #e52e71);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-  #green_h1 h1 {
-    text-align: start !important;
-  }
-
-  .green {
-    background-image: linear-gradient(
-      to left,
-      #45465d,
-      #233864,
-      #1a5585,
-      #097ab3,
-      #1ea8d9
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-  .green h1 {
-    background-image: linear-gradient(
-      to left,
-      #45465d,
-      #233864,
-      #1a5585,
-      #097ab3,
-      #1ea8d9
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
 
   section {
     padding: 20px;
@@ -582,17 +554,11 @@
 
   #typed {
     display: none;
+    background-image: linear-gradient(to right, #ff8a00, #e52e71);
   }
 
   #type {
-    background-image: linear-gradient(
-      to left,
-      #45465d,
-      #233864,
-      #1a5585,
-      #097ab3,
-      #1ea8d9
-    );
+  background-image: linear-gradient(to right, #ff8a00, #e52e71);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -725,6 +691,7 @@
     max-width: 800px;
     object-fit: cover !important;
   }
+
   @media screen and (min-width: 1220px) {
     .gridPrincipal {
       display: grid;
@@ -759,6 +726,7 @@
       background: #fff;
       text-align: center;
     }
+
     .skill-item2 {
       z-index: -10;
       display: flex;
@@ -770,6 +738,7 @@
       background-color: red;
       text-align: center;
     }
+
     .skill-item3 {
       z-index: -10;
       display: flex;
@@ -781,6 +750,7 @@
       background: #fff;
       text-align: center;
     }
+
     .skill-item4 {
       z-index: -10;
       display: flex;
@@ -792,6 +762,7 @@
       background: #fff;
       text-align: center;
     }
+
     .skill-item5 {
       z-index: -10;
       display: flex;
@@ -817,6 +788,7 @@
     text-align: center;
     border-radius: 5px;
   }
+
   .skill-item2 {
     z-index: -10;
     display: flex;
@@ -829,6 +801,7 @@
     text-align: center;
     border-radius: 5px;
   }
+
   .skill-item3 {
     z-index: -10;
     display: flex;
@@ -841,6 +814,7 @@
     text-align: center;
     border-radius: 5px;
   }
+
   .skill-item4 {
     z-index: -10;
     display: flex;
@@ -853,6 +827,7 @@
     text-align: center;
     border-radius: 5px;
   }
+
   .skill-item5 {
     z-index: -10;
     display: flex;
@@ -898,14 +873,12 @@
   }
 
   .imgS {
-    filter: invert(100%) brightness(0) saturate(100%) invert(80%) sepia(13%)
-      saturate(1%) hue-rotate(314deg) brightness(103%) contrast(105%) !important;
+    filter: invert(100%) brightness(0) saturate(100%) invert(80%) sepia(13%) saturate(1%) hue-rotate(314deg) brightness(103%) contrast(105%) !important;
     grid-area: item1;
   }
 
   .imgS2 {
-    filter: invert(100%) brightness(0) saturate(100%) invert(80%) sepia(13%)
-      saturate(1%) hue-rotate(314deg) brightness(103%) contrast(105%) !important;
+    filter: invert(100%) brightness(0) saturate(100%) invert(80%) sepia(13%) saturate(1%) hue-rotate(314deg) brightness(103%) contrast(105%) !important;
     grid-area: item3;
   }
 
@@ -919,18 +892,22 @@
   .eliminar {
     display: none;
   }
+
   .logoNav {
     display: none;
   }
+
   html {
     min-height: 100vh;
     min-width: 100vw;
     max-height: 100vh;
     max-width: 100vw;
   }
+
   .refi2 {
     width: 90%;
   }
+
   .gridPrincipalHome {
     display: grid;
     height: 100dvh !important;
@@ -942,35 +919,43 @@
       "gf0 gf2 gf4"
       "gf0 gf3 gf4";
   }
+
   .gf0 {
     grid-area: gf0;
     width: 100%;
   }
+
   .gf0 img {
     width: 100%;
   }
+
   .gf1 {
     grid-area: gf1;
     z-index: -1;
   }
+
   .gf2 {
     grid-area: gf2;
   }
+
   .gf3 {
     grid-area: gf3;
     z-index: -1;
   }
+
   .gf4 {
     grid-area: gf4;
     width: 100%;
     display: grid;
     align-content: end;
   }
+
   .gf4 img {
     width: 100%;
     rotate: 180deg;
     z-index: -1000;
   }
+
   body {
     margin: 0;
     min-height: 100%;
@@ -991,7 +976,6 @@
   h1 {
     text-align: center;
     font-size: 36px;
-    margin: 0 !important;
   }
 
   .p {
@@ -1002,54 +986,6 @@
     font-size: 16px;
   }
 
-  #label_h1 h1 {
-    text-align: start;
-  }
-
-  label {
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-  label h1 {
-    background-image: linear-gradient(to right, #ff8a00, #e52e71);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-  #green_h1 h1 {
-    text-align: start !important;
-  }
-
-  .green {
-    background-image: linear-gradient(
-      to left,
-      #45465d,
-      #233864,
-      #1a5585,
-      #097ab3,
-      #1ea8d9
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-  .green h1 {
-    background-image: linear-gradient(
-      to left,
-      #45465d,
-      #233864,
-      #1a5585,
-      #097ab3,
-      #1ea8d9
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
   #home {
     padding: 0 !important;
   }
@@ -1094,14 +1030,12 @@
 
   #type {
     text-align: center;
-    background-image: linear-gradient(
-      to left,
-      #45465d,
-      #233864,
-      #1a5585,
-      #097ab3,
-      #1ea8d9
-    );
+    background-image: linear-gradient(to left,
+        #45465d,
+        #233864,
+        #1a5585,
+        #097ab3,
+        #1ea8d9);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -1197,6 +1131,7 @@
     background: #fff;
     text-align: center;
   }
+
   .skill-item2 {
     z-index: -10;
     display: flex;
@@ -1208,6 +1143,7 @@
     background-color: red;
     text-align: center;
   }
+
   .skill-item3 {
     z-index: -10;
     display: flex;
@@ -1219,6 +1155,7 @@
     background: #fff;
     text-align: center;
   }
+
   .skill-item4 {
     z-index: -10;
     display: flex;
@@ -1230,6 +1167,7 @@
     background: #fff;
     text-align: center;
   }
+
   .skill-item5 {
     z-index: -10;
     display: flex;
@@ -1274,14 +1212,12 @@
   }
 
   .imgS {
-    filter: invert(100%) brightness(0) saturate(100%) invert(80%) sepia(13%)
-      saturate(1%) hue-rotate(314deg) brightness(103%) contrast(105%) !important;
+    filter: invert(100%) brightness(0) saturate(100%) invert(80%) sepia(13%) saturate(1%) hue-rotate(314deg) brightness(103%) contrast(105%) !important;
     grid-area: item1;
   }
 
   .imgS2 {
-    filter: invert(100%) brightness(0) saturate(100%) invert(80%) sepia(13%)
-      saturate(1%) hue-rotate(314deg) brightness(103%) contrast(105%) !important;
+    filter: invert(100%) brightness(0) saturate(100%) invert(80%) sepia(13%) saturate(1%) hue-rotate(314deg) brightness(103%) contrast(105%) !important;
     grid-area: item3;
   }
 
@@ -1314,22 +1250,27 @@
     grid-template-rows: auto auto auto;
     grid-template-areas: "g1" "g2" "g3";
   }
+
   .grid3 ul {
     list-style-type: none;
     padding: 0;
   }
+
   .grid3 ul li {
     text-align: center;
     font-size: 18px !important;
   }
+
   .grid1 {
     grid-area: g1;
     padding: 10px 10px;
   }
+
   .grid2 {
     grid-area: g2;
     padding: 10px 10px;
   }
+
   .grid3 {
     grid-area: g3;
     padding: 10px 10px;

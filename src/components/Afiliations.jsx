@@ -1,5 +1,5 @@
 import natgas from "../Img/natgas-logo.svg";
-import kansas from "../Img/Kansas-logo.svg";
+import kansas from "../Img/Kansas-logoBlack.png";
 import repsol from "../Img/Repsol-logo.png";
 import glencore from "../Img/Glencore-logo.jpg";
 import tomza from "../Img/gasTomza-logo.png";
@@ -21,7 +21,7 @@ function Afiliations() {
         </div>
         <div className="Img-x"></div>
         <div>
-          <img className="transparentImg" src={kansas} />
+          <img src={kansas} />
         </div>
         <div className="Img-x"></div>
         <div>
@@ -42,4 +42,4 @@ function Afiliations() {
   );
 }
 
-export default Afiliations
+export default Afiliations;
