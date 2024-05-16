@@ -3,11 +3,10 @@ import '../css/Textbox.css';
 
 function Textbox(props) {
 
-  const { title, content, dataTarget } = props.data;
+  const { title, content } = props.data;
 
   return (
     <>
-      <span id={dataTarget}></span>
       <div className="Textbox">
           <div className="TextboxTitle">
             {title}

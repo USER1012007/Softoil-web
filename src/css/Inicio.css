@@ -6,7 +6,7 @@
 }
 
 .refi2 {
-  width: 100%;
+  width: 50%;
   filter: drop-shadow(10px 8px 4px #165d8f);
   z-index: -1;
   opacity: 0.6;
@@ -22,7 +22,7 @@
 
   .gridPrincipalHome {
     display: grid;
-    height: 85vh;
+    height: calc(88dvh - 5px);
     width: 100%;
     grid-template-columns: 12.5% auto 12.5%;
     grid-template-rows: 50% 50%;
@@ -87,7 +87,7 @@
   .gridPrincipalHome {
 
     display: grid;
-    height: 100dvh !important;
+    height: calc(88dvh - 5px);
     width: 100%;
     grid-template-columns: 25% auto 25%;
     grid-template-rows: auto auto auto;
@@ -126,12 +126,7 @@
 
   #type {
     text-align: center;
-    background-image: linear-gradient(to left,
-        #45465d,
-        #233864,
-        #1a5585,
-        #097ab3,
-        #1ea8d9);
+    background-image: linear-gradient(to right, #ff8a00, #e52e71);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

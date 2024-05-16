@@ -1,8 +1,8 @@
 section {
-  padding: 20px;
-  min-height: calc(100vh - 135px);
-  border: 1px solid #bbb;
+  height: 88vh;
+  border: 1px solid #0080c1;
   border-radius: 5px;
+  margin-bottom: 18px;
 }
 .SolutionSection * {
   margin: 0;

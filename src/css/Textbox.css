@@ -7,9 +7,10 @@
   opacity: 1;
   transition: opacity 1s ease-in;
   width: 94%;
-  margin: 30px auto;
+  margin: 18px auto;
   background: #f6f8fc;
   border: 1px solid #0080c1;
+  min-height: 85vh;
 }
 
 li {
@@ -53,6 +54,18 @@ li {
 .title {
   font-size: 2.5em !important;
 }
+
+.empty {
+  height: 40px;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+/**/
+/* .empty div { */
+/*   width: 94%; */
+/*   border: 1px solid #0080c1; */
+/* } */
 
 @media only screen and (max-width: 1199px) {
 
