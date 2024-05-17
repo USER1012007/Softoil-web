@@ -1,5 +1,5 @@
 import marco from "../Img/marco.png";
-import logoSoft from "../Img/Iconos/logo_SoftOil.png";
+import logoSoft from "../Img/soft.png";
 import imagen_Refineria from "../Img/imagen_Refineria.png";
 import "../css/Inicio.css";
 import React, { useEffect } from 'react';

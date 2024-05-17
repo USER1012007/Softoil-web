@@ -1,5 +1,5 @@
 import natgas from "../Img/natgas-logo.svg";
-import kansas from "../Img/Kansas-logoBlack.png";
+import kansas from "../Img/Kansas-logo.png";
 import repsol from "../Img/Repsol-logo.png";
 import glencore from "../Img/Glencore-logo.png";
 import tomza from "../Img/Tomza-logo.png";
