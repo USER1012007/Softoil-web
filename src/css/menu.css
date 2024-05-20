@@ -1,11 +1,11 @@
  .header {
    display: grid;
-   height: 80px;
+   height: 70px;
  }
 
  .menu {
    background: #f6f8fc;
-   height: 80px;
+   height: 70px;
    border: 1px solid #0080c1;
    width: 100%;
    position: fixed;
@@ -259,7 +259,7 @@
 
    .header {
      display: grid;
-     height: 116px;
+     height: 70px;
    }
 
    .popup-window input {

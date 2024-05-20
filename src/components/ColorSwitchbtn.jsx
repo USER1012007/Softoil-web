@@ -12,7 +12,7 @@ function ColorSwitchbtn() {
     const textBox = document.querySelectorAll('.Textbox');
     const links = document.getElementsByTagName('a');
     const popup = document.querySelector('.popup');
-    const burgerLine = document.querySelector('.burgerLine');
+    const card = document.querySelector('.card');
     const glencoreFilter = document.querySelectorAll("#GlencoreFilter");
 
     textBox.forEach(element => {
@@ -27,6 +27,7 @@ function ColorSwitchbtn() {
         popup.style.setProperty('--burger-color', '#f6f8fc');
         glencoreFilter[0].classList.add("transparentImgsvg");
         glencoreFilter[1].classList.remove("transparentImgsvg");
+        card.style.backgroundColor = '#151a1f';
         for (let i = 0; i < links.length; i++) {
           links[i].style.color = '#ffffff';
         }

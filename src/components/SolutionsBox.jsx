@@ -13,8 +13,9 @@ function SolutionsBox() {
 
   return (
     <>
+
       <Swiper
-        style={{ width: "99%", marginRight: "25px" }}
+        style={{ width: "100%" }}
         slidesPerView={3}
         spaceBetween={40}
         centerslides="true"
@@ -42,7 +43,7 @@ function SolutionsBox() {
         }}
         loop={true}
       >
-        <div>
+        <div style={{ width: "50%" }}>
 
           <SwiperSlide>
             <div className="card swiper-slide">
@@ -187,10 +188,11 @@ function SolutionsBox() {
             </div>
           </SwiperSlide>
         </div>
-
-        <div className="swiper-button-next" style={{ color: "#097ab3", zIndex: "9999" }}></div>
-        <div className="swiper-button-prev" style={{ color: "#097ab3", marginRight: "100px" }}></div>
-        <div className="swiper-pagination"></div>
+        <div>
+          <div className="swiper-button-next" style={{ color: "#097ab3", zIndex: "9999" }}></div>
+          <div className="swiper-button-prev" style={{ color: "#097ab3", paddingRight: "251px" }}></div>
+          <div className="swiper-pagination"></div>
+        </div>
       </Swiper>
     </>
   );
@@ -203,12 +205,4 @@ export default SolutionsBox;
 
 
 // <section>
-//   <div className="SolutionSection">
-//     <div className="slide-container swiper">
-//       <div className="slide-content">
-//         <div className="card-wrapper swiper-wrapper">
-//         </div>
-//       </div>
-//     </div>
-//   </div>
 // </section>
