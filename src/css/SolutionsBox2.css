@@ -1,31 +1,8 @@
-:root {
-  --dark-color: #e2e6eb;
-  --card-color: #000;
-  --button-color: #000;
-}
-
-* {
-
-  transition: all 0.3s ease;
-}
-
-.content-title {
-  color: var(--card-color);
-}
-
 section {
   height: 88vh;
   border: 1px solid #0080c1;
   border-radius: 5px;
   margin-bottom: 18px;
-}
-
-.overlay::after {
-  border-radius: 0 24px 0 0;
-}
-
-.cardsContent {
-  width: 0;
 }
 
 .SolutionSection * {
@@ -54,9 +31,9 @@ section {
 }
 
 .card {
-  border: 1px solid #0080c1;
   border-radius: 25px;
-  background-color: #fff;
+  background: #1a1a21;
+  border: 1px solid #0080c1;
 }
 
 .image-content,
@@ -78,7 +55,7 @@ section {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #097ab3;
+  /* background: #000; */
   border-radius: 25px 25px 0 25px;
 }
 
@@ -93,6 +70,11 @@ section {
   background-color: #097ab3;
 }
 
+.overlay::after {
+  border-radius: 0 24px 0 0;
+  background-color: #1a1a21;
+}
+
 .overlay2 {
   position: absolute;
   left: 20px;
@@ -100,7 +82,7 @@ section {
   top: 17px;
   height: 77.5%;
   width: 100%;
-  background-color: #fff;
+  background-color: #000;
   border-radius: 25px 25px 0 25px;
 }
 
@@ -112,12 +94,12 @@ section {
   bottom: -22.25px;
   height: 22.25px;
   width: 22.25px;
-  background-color: #fff;
+  background: #0a74a9;
 }
 
 .overlay2::after {
   border-radius: 0 24px 0 0;
-  background-color: #097ab3;
+  background: #0a74a9;
 }
 
 .overlay2 {
@@ -127,8 +109,7 @@ section {
   top: 17px;
   height: 77.5%;
   width: 100%;
-  background-color: var(--dark-color);
-  /* background-color: #1a1a21; */
+  background-color: #097ab3;
   border-radius: 25px 25px 0 25px;
 }
 
@@ -166,6 +147,7 @@ section {
 .card-content {
   height: 210px;
   max-height: 210px;
+  background: #1a1a21;
 }
 
 @media screen and (min-width: 435) {
@@ -177,7 +159,7 @@ section {
 
 .content-description {
   font-size: 14px !important;
-  color: var(--card-color);
+  color: #666;
   text-align: center;
 }
 
@@ -185,7 +167,7 @@ section {
   border: none;
   font-size: 16px;
   border: 1px solid #bbbbbb;
-  color: var(--button-color);
+  color: #333;
   padding: 8px 16px;
   border-radius: 6px;
   margin: 14px;
@@ -284,10 +266,7 @@ section {
   height: 100%;
   position: relative;
   transition-property: transform;
-  display: block;
-  border-radius: 30px;
-  background-color: var(--dark-color);
-  color: white;
+  display: block
 }
 
 .swiperslide-invisible-blank {
@@ -444,7 +423,7 @@ section {
 }
 
 .swiper-lazy-preloader-white {
-  --swiper-preloader-color: #fff
+  --swiper-preloader-color: #1a1a21
 }
 
 .swiper-lazy-preloader-black {

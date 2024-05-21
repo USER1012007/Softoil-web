@@ -43,10 +43,10 @@ function SolutionsBox() {
         }}
         loop={true}
       >
-        <div style={{ width: "50%" }}>
+        <div style={{ width: "50%" }} className="swiper-wrapper">
 
           <SwiperSlide>
-            <div className="card swiper-slide">
+            <div className="card swiperslide">
               <div className="image-content">
                 <span className="overlay"></span>
                 <span className="overlay2"></span>
@@ -67,7 +67,7 @@ function SolutionsBox() {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="card swiper-slide">
+            <div className="card swiperslide">
               <div className="image-content">
                 <span className="overlay"></span>
                 <span className="overlay2"></span>
@@ -88,7 +88,7 @@ function SolutionsBox() {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="card swiper-slide">
+            <div className="card swiperslide">
               <div className="image-content">
                 <span className="overlay"></span>
                 <span className="overlay2"></span>
@@ -109,7 +109,7 @@ function SolutionsBox() {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="card swiper-slide">
+            <div className="card swiperslide">
               <div className="image-content">
                 <span className="overlay"></span>
                 <span className="overlay2"></span>
@@ -129,7 +129,7 @@ function SolutionsBox() {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="card swiper-slide">
+            <div className="card swiperslide">
               <div className="image-content">
                 <span className="overlay"></span>
                 <span className="overlay2"></span>
@@ -149,7 +149,7 @@ function SolutionsBox() {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="card swiper-slide">
+            <div className="card swiperslide">
               <div className="image-content">
                 <span className="overlay"></span>
                 <span className="overlay2"></span>
@@ -169,7 +169,7 @@ function SolutionsBox() {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="card swiper-slide">
+            <div className="card swiperslide">
               <div className="image-content">
                 <span className="overlay"></span>
                 <span className="overlay2"></span>

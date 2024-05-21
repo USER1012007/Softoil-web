@@ -14,10 +14,14 @@ function ColorSwitchbtn() {
     const popup = document.querySelector('.popup');
     const card = document.querySelector('.card');
     const glencoreFilter = document.querySelectorAll("#GlencoreFilter");
+    const root = document.documentElement;
 
     textBox.forEach(element => {
       if (backgroundColor === 'rgb(226, 230, 235)') {
         // Hacer modo oscuro
+
+        root.style.setProperty('--dark-color', '#1a1a21');
+        root.style.setProperty('--card-color', '#fff');
         bodyElement.style.backgroundColor = "#151a1f";
         element.style.backgroundColor = '#1A1A21';
         element.style.color = '#ffffff';
@@ -33,6 +37,10 @@ function ColorSwitchbtn() {
         }
       } else {
         // Hacer modo claro
+
+        root.style.setProperty('--dark-color', '#e2e6eb');
+        root.style.setProperty('--card-color', '#000');
+        bodyElement.style.backgroundColor = "#fff";
         bodyElement.style.backgroundColor = 'rgb(226, 230, 235)';
         element.style.backgroundColor = '#f6f8fc';
         element.style.color = '#1b1b1b';
