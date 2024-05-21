@@ -9,6 +9,7 @@
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-areas:
     "a x b x c" "x d x e x";
+    height: 60vh;
 }
 
 
