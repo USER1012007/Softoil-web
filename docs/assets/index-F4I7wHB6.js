@@ -14029,66 +14029,60 @@ const Km = "assets/natgas-logo-a5nW_Egh.svg",
   qm = "assets/Kansas-logo-28_FC23k.png",
   Zm = "assets/Repsol-logo-Jx-Igxam.png",
   Jm = "assets/Glencore-logo-Js-a1W3i.png",
-  td = "assets/Tomza-logo-QSoVgow7.png";
-function eg() {
-  const e = A.useRef(null);
-  return (
+  td = "assets/Tomza-logo-QSoVgow7.png",
+  eg = () => {
+    const e = A.useRef([]);
     A.useEffect(() => {
-      const t = e.current,
-        n = () => {
-          if (t) {
-            const r = t.getBoundingClientRect(),
-              i =
-                r.top >= 0 &&
-                r.left >= 0 &&
-                r.bottom <=
-                  (window.innerHeight ||
-                    document.documentElement.clientHeight) &&
-                r.right <=
-                  (window.innerWidth || document.documentElement.clientWidth);
-            console.log("rect top", r.top),
-              console.log("rect left", r.left),
-              console.log("rect bottom", r.bottom),
-              console.log("rect right", r.right),
-              console.log("isVisible", i),
-              console.log(),
-              i ? t.classList.add("active") : t.classList.remove("active");
-          }
-        };
+      const n = () => {
+        console.log(e),
+          e.current.forEach((r) => {
+            if (r) {
+              const i = r.getBoundingClientRect();
+              i.top >= 0 &&
+              i.left >= 0 &&
+              i.bottom <=
+                (window.innerHeight || document.documentElement.clientHeight) &&
+              i.right <=
+                (window.innerWidth || document.documentElement.clientWidth)
+                ? r.classList.add("active")
+                : r.classList.remove("active");
+            }
+          });
+      };
       return (
         window.addEventListener("scroll", n),
         () => window.removeEventListener("scroll", n)
       );
-    }, []),
-    p.jsx(p.Fragment, {
-      children: p.jsxs("div", {
-        className: "Afiliations",
-        children: [
-          p.jsx("div", { ref: e, children: p.jsx("img", { src: Km }) }),
-          p.jsx("div", { className: "Img-x" }),
-          p.jsx("div", { ref: e, children: p.jsx("img", { src: qm }) }),
-          p.jsx("div", { className: "Img-x" }),
-          p.jsx("div", { ref: e, children: p.jsx("img", { src: Zm }) }),
-          p.jsx("div", { className: "Img-x" }),
-          p.jsx("div", {
-            ref: e,
-            children: p.jsx("img", { id: "GlencoreFilter", src: Jm }),
+    }, []);
+    const t = (n) => {
+      n && !e.current.includes(n) && e.current.push(n);
+    };
+    return p.jsxs("div", {
+      className: "Afiliations",
+      children: [
+        p.jsx("div", { ref: t, children: p.jsx("img", { src: Km }) }),
+        p.jsx("div", { className: "Img-x" }),
+        p.jsx("div", { ref: t, children: p.jsx("img", { src: qm }) }),
+        p.jsx("div", { className: "Img-x" }),
+        p.jsx("div", { ref: t, children: p.jsx("img", { src: Zm }) }),
+        p.jsx("div", { className: "Img-x" }),
+        p.jsx("div", {
+          ref: t,
+          children: p.jsx("img", { id: "GlencoreFilter", src: Jm }),
+        }),
+        p.jsx("div", { className: "Img-x" }),
+        p.jsx("div", {
+          ref: t,
+          children: p.jsx("img", {
+            id: "GlencoreFilter",
+            src: td,
+            className: "transparentImgsvg",
           }),
-          p.jsx("div", { className: "Img-x" }),
-          p.jsx("div", {
-            ref: e,
-            children: p.jsx("img", {
-              id: "GlencoreFilter",
-              src: td,
-              className: "transparentImgsvg",
-            }),
-          }),
-          p.jsx("div", { className: "Img-x" }),
-        ],
-      }),
-    })
-  );
-}
+        }),
+        p.jsx("div", { className: "Img-x" }),
+      ],
+    });
+  };
 function tg() {
   return p.jsx(p.Fragment, {
     children: p.jsxs("div", {
