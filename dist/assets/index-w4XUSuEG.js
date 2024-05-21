@@ -14037,15 +14037,22 @@ function eg() {
       const t = e.current,
         n = () => {
           if (t) {
-            const r = t.getBoundingClientRect();
-            r.top >= 0 &&
-            r.left >= 0 &&
-            r.bottom <=
-              (window.innerHeight || document.documentElement.clientHeight) &&
-            r.right <=
-              (window.innerWidth || document.documentElement.clientWidth)
-              ? t.classList.add("active")
-              : t.classList.remove("active");
+            const r = t.getBoundingClientRect(),
+              i =
+                r.top >= 0 &&
+                r.left >= 0 &&
+                r.bottom <=
+                  (window.innerHeight ||
+                    document.documentElement.clientHeight) &&
+                r.right <=
+                  (window.innerWidth || document.documentElement.clientWidth);
+            console.log("rect top", r.top),
+              console.log("rect left", r.left),
+              console.log("rect bottom", r.bottom),
+              console.log("rect right", r.right),
+              console.log("isVisible", i),
+              console.log(),
+              i ? t.classList.add("active") : t.classList.remove("active");
           }
         };
       return (
@@ -14056,19 +14063,20 @@ function eg() {
     p.jsx(p.Fragment, {
       children: p.jsxs("div", {
         className: "Afiliations",
-        ref: e,
         children: [
-          p.jsx("div", { children: p.jsx("img", { src: Km }) }),
+          p.jsx("div", { ref: e, children: p.jsx("img", { src: Km }) }),
           p.jsx("div", { className: "Img-x" }),
-          p.jsx("div", { children: p.jsx("img", { src: qm }) }),
+          p.jsx("div", { ref: e, children: p.jsx("img", { src: qm }) }),
           p.jsx("div", { className: "Img-x" }),
-          p.jsx("div", { children: p.jsx("img", { src: Zm }) }),
+          p.jsx("div", { ref: e, children: p.jsx("img", { src: Zm }) }),
           p.jsx("div", { className: "Img-x" }),
           p.jsx("div", {
+            ref: e,
             children: p.jsx("img", { id: "GlencoreFilter", src: Jm }),
           }),
           p.jsx("div", { className: "Img-x" }),
           p.jsx("div", {
+            ref: e,
             children: p.jsx("img", {
               id: "GlencoreFilter",
               src: td,

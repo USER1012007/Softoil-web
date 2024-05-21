@@ -22,7 +22,12 @@ function Afiliations() {
           rect.left >= 0 &&
           rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
           rect.right <= (window.innerWidth || document.documentElement.clientWidth);
-
+        console.log("rect top", rect.top)
+        console.log("rect left", rect.left)
+        console.log("rect bottom", rect.bottom)
+        console.log("rect right", rect.right)
+        console.log("isVisible", isVisible)
+        console.log()
         if (isVisible) {
           affiliationElement.classList.add("active");
         } else {
@@ -38,25 +43,25 @@ function Afiliations() {
 
   return (
     <>
-      <div className="Afiliations" ref={affiliationRef}>
-        <div>
+      <div className="Afiliations">
+        <div ref={affiliationRef}>
           <img src={natgas} />
         </div>
         <div className="Img-x"></div>
-        <div>
+        <div ref={affiliationRef}>
           <img src={kansas} />
         </div>
         <div className="Img-x"></div>
-        <div>
+        <div ref={affiliationRef}>
           <img src={repsol} />
         </div>
 
         <div className="Img-x"></div>
-        <div>
+        <div ref={affiliationRef}>
           <img id="GlencoreFilter" src={glencore} />
         </div>
         <div className="Img-x"></div>
-        <div>
+        <div ref={affiliationRef}>
           <img id="GlencoreFilter" src={tomza} className="transparentImgsvg" />
         </div>
         <div className="Img-x"></div>

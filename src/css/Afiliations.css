@@ -9,11 +9,10 @@
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-areas:
     "a x b x c" "x d x e x";
-  opacity: 0;
-  transition: opacity 1.5s ease-in-out;
 }
 
-.Afiliations.active {
+
+.Afiliations div.active {
   opacity: 1;
 }
 
@@ -27,6 +26,8 @@
   display: grid;
   align-content: center;
   justify-items: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
 }
 
 @media only screen and (max-width: 800px) {
