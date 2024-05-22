@@ -38,7 +38,7 @@ input:checked~.sun {
   display: block;
 }
 
-input {
+#themeButton{
   position: absolute;
   opacity: 0;
   cursor: pointer;

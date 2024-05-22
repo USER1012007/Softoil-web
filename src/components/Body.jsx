@@ -5,6 +5,7 @@ import SolutionsBox from "./SolutionsBox.jsx";
 import Inicio from "./Inicio.jsx";
 import AfiliationsBox from "./Afiliations.jsx";
 import AboutUsBox from './AboutUs.jsx';
+import FooterBox from './Footer.jsx';
 import ContactBox from './Contact.jsx';
 import tomza from "../Img/Tomza-logo.png";
 
@@ -30,10 +31,10 @@ function Body() {
     content: <AfiliationsBox elements={tomza} />
   };
 
-  // const Contact = {
-  //   title: <label className='colorBlue'><h1>CONTACTO</h1></label>,
-  //   content: <ContactBox/>,
-  // };
+  const Contact = {
+    title: <label className='colorBlue'><h1>Contacto</h1></label>,
+    content: <ContactBox/>,
+  }
 
   return (
     <>
@@ -47,7 +48,9 @@ function Body() {
       <div className='empty' id='Afiliations'><div></div></div>
       <Textbox data={Afiliations} />
       <div className='empty' id='Contact'><div></div></div>
-      <ContactBox />
+      <Textbox data={Contact} />
+      <div className='empty'></div>
+      <FooterBox />
     </>
   );
 }

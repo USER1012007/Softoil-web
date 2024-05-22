@@ -9,7 +9,7 @@
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-areas:
     "a x b x c" "x d x e x";
-    height: 60vh;
+  height: 100%;
 }
 
 
@@ -44,9 +44,8 @@
 }
 
 @media only screen and (max-width: 412px) {
-
   .Afiliations {
-    grid-template-rows: 20% 4vh 20% 4vh 20% 3vh 20% 3vh 20% 0%;
-    grid-template-columns: 100%;
+    /* grid-template-rows: 20% 4vh 20% 4vh 20% 3vh 20% 3vh 20% 0%; */
+    /* grid-template-columns: 100%; */
   }
 }

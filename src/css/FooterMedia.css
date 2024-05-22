@@ -1,7 +1,5 @@
 .example-2 .icon-content {
   position: relative;
-  width: 15vh;
-  height: 15vh;
 }
 
 .example-2 .icon-content .tooltip {
@@ -29,8 +27,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 15vh;
-  height: 15vh;
+  width: 12vw;
+  height: 12vw;
   transition: all 0.3s ease-in-out;
 }
 
@@ -62,4 +60,12 @@
   grid-area: whatsapp;
   display: grid;
   justify-items: center;
+}
+
+@media only screen and (max-width: 619px) {
+  .example-2 .icon-content a{
+    /* width: 8vh; */
+    /* height: 8vh; */
+  }
+
 }

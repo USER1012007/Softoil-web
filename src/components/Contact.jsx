@@ -1,37 +1,41 @@
 import "../css/Contact.css";
-import FooterMedia from "./FooterMedia";
-import logo from "../Img/soft.png"
-import React, { useState } from 'react';
 
 function Contact() {
-
-  const [activeLink, setActiveLink] = useState(null);
-
-  const handleLinkClick = (targetId) => {
-    setActiveLink(targetId);
-    document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
-  };
   return (
     <>
-      <div className="footer">
-        <div className="footerList">
-          <img className="logoSoft" src={logo} />
-          <a data-target="Inicio" onClick={() => handleLinkClick("Inicio")}>Inicio</a>
-          <a data-target="AboutUs" onClick={() => handleLinkClick("AboutUs")}>Nosotros</a>
-          <a data-target="Worths" onClick={() => handleLinkClick("Worths")} >Valores</a>
-          <a data-target="Solutions" onClick={() => handleLinkClick("Solutions")} >Soluciones</a>
-          <a data-target="Afiliations" onClick={() => handleLinkClick("Afiliations")} >Clientes</a>
-          <a data-target="Contact" onClick={() => handleLinkClick("Contact")} >Contacto</a>
+      <form className="myForm">
+        <label htmlFor="customer_name">Nombre completo</label>
+        
+        <div className="form">
+          <input className="input" placeholder="nombre completo" required="" type="text"/>
+            <span className="input-border"></span>
         </div>
-        <div className="footerMedia">
-          <FooterMedia/>
-          <hr />
-          <p>&copy; {new Date().getFullYear()}</p>
+
+        <label htmlFor="email_address">Correo electrónico</label>
+
+        
+        <div className="form">
+          <input className="input" placeholder="correo electrónico" required="" type="email"/>
+            <span className="input-border"></span>
         </div>
-      </div>
+
+        <label htmlFor="phone">Telefono</label>
+        <div className="form">
+          <input className="input" placeholder="numero" required="" type="tel"/>
+            <span className="input-border"></span>
+        </div>
+
+        <div id="comment-box">
+          <label htmlFor="comments">Comentarios</label>
+          <textarea name="comments" id="comments" placeholder="mensaje" maxLength="500"></textarea>
+        </div>
+
+        <button className="btn">Enviar</button>
+      </form>
     </>
   );
 }
+
 
 export default Contact;
 

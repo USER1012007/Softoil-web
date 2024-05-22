@@ -11,7 +11,6 @@ const Afiliations = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log(imageRefs)
       imageRefs.current.forEach((imageRef) => {
         if (imageRef) {
           const rect = imageRef.getBoundingClientRect();
