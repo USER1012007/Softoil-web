@@ -1,144 +1,109 @@
-.myForm {
-  color: #fff;
+:root {
+  --color-input: #000;
+  --backgroud-label: #f6f8fc;
+}
+
+
+/*Estructure*/
+form {
   display: grid;
-  grid-template-columns: auto 1fr 1fr;
-  /* grid-auto-flow: row dense; */
-  grid-gap: .8em;
-  /* background: #eee; */
-  padding: 1.2em;
-  border: 1px solid #0080c1;
-  border-radius: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
-.myForm input, .myForm textarea{
-  border-radius: 10px;
-} 
-
-#customer_name {}
-
-.myForm>label {
-  grid-column: 1;
-  grid-row: auto;
-}
-
-.myForm>input,
-.myForm>button {
-  grid-column: 2;
-  grid-row: auto;
-  padding: 1em;
-  border: none;
-}
-
-.myForm textarea {
-  min-height: calc(100% - 2em);
+.form {
   width: 100%;
-  border: none;
-  background: transparent;
-  color: #fff;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-#comment-box {
-  grid-column: 3;
-  grid-row: span 3;
+.full-width {
+  grid-column: 1 / 3;
 }
 
-.myForm>button {
-  grid-column: 2 / 4;
+button,
+input,
+textarea {
+  padding: 1em;
 }
 
-.btn {
-  font-size: 17px;
-  background: transparent;
-  border: none;
-  padding: 1em 1.5em;
-  color: #ffedd3;
-  text-transform: uppercase;
+.buttonContent {
+  display: grid;
+}
+
+
+/*Inputs*/
+.form-item {
   position: relative;
-  transition: 0.5s ease;
+}
+
+.form-item input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: solid 1px #ee8456;
+  transition: all .1s ease;
+  color: var(--color-input);
+  border-radius: 15px;
+  outline: none;
+}
+
+.form-item label {
+  position: absolute;
+  cursor: text;
+  z-index: 2;
+  top: 13px;
+  left: 10px;
+  font-size: 20px;
+  padding: 0 10px;
+  background: var(--backgroud-label);
+  color: var(--color-input);
+  transition: all 0.2s ease, background 0s ease;
+}
+
+.form-item input:focus+label,
+.form-item input:valid+label {
+  top: -5px;
+  font-size: 15px;
+}
+
+
+/*button*/
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
   cursor: pointer;
 }
 
-.btn::before {
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
   content: "";
   position: absolute;
+  top: 0;
   left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background-color: #0080c1;
-  transition: 0.5s ease;
-}
-
-.btn:hover {
-  color: #000;
-}
-
-.btn:hover::before {
+  transform: scaleX(0);
+  transform-origin: 0 50%;
   width: 100%;
-}
-
-.btn::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 0;
-  width: 100%;
-  background-color: #ffc506;
-  transition: 0.4s ease;
-  z-index: -1;
-}
-
-.btn:hover::after {
-  height: 100%;
-  transition-delay: 0.4s;
-  color: aliceblue;
-}
-
-#comments {
-  /* resize: none; */
-}
-
-
-
-
-
-.form {
- --width-of-input: 200px;
- --border-height: 1px;
- --border-before-color: rgba(221, 221, 221, 0.39);
- --border-after-color: #5891ff;
- --input-hovered-color: #4985e01f;
- position: relative;
- width: var(--width-of-input);
-}
-/* styling of Input */
-.input {
- color: #fff;
- font-size: 0.9rem;
- background-color: transparent;
- width: 100%;
- box-sizing: border-box;
- padding-inline: 0.5em;
- padding-block: 0.7em;
- border: none;
-}
-.input-border {
- position: absolute;
- background: var(--border-after-color);
- width: 0%;
- height: 2px;
- bottom: 0;
- left: 0;
- transition: 0.3s;
-}
-input:hover{
- background: var(--input-hovered-color);
-}
-
-input:focus {
- outline: none;
-}
-input:hover ~ .input-border, input:focus ~ .input-border {
- width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(82.3deg,
+      #ff8a00 10.8%,
+      #e52e71 94.3%);
+  transition: all 0.475s;
 }

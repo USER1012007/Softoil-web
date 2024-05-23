@@ -1,41 +1,54 @@
 import "../css/Contact.css";
+import React, { useState, useRef, useEffect } from 'react';
 
 function Contact() {
+
   return (
     <>
-      <form className="myForm">
-        <label htmlFor="customer_name">Nombre completo</label>
-        
-        <div className="form">
-          <input className="input" placeholder="nombre completo" required="" type="text"/>
-            <span className="input-border"></span>
-        </div>
 
-        <label htmlFor="email_address">Correo electrónico</label>
+      <div className="form">
+        <form action="">
 
-        
-        <div className="form">
-          <input className="input" placeholder="correo electrónico" required="" type="email"/>
-            <span className="input-border"></span>
-        </div>
+          <div className="form-item">
+            <input type="text" id="name" autoComplete="off" required />
+            <label htmlFor="name">Nombre</label>
+          </div>
 
-        <label htmlFor="phone">Telefono</label>
-        <div className="form">
-          <input className="input" placeholder="numero" required="" type="tel"/>
-            <span className="input-border"></span>
-        </div>
+          <div className="form-item">
+            <input type="tel" id="number" autoComplete="off" required />
+            <label htmlFor="number">Numero</label>
+          </div>
 
-        <div id="comment-box">
-          <label htmlFor="comments">Comentarios</label>
-          <textarea name="comments" id="comments" placeholder="mensaje" maxLength="500"></textarea>
-        </div>
+          <div className="form-item">
+            <input type="email" id="email" autoComplete="off" required />
+            <label htmlFor="email">Correo</label>
+          </div>
+          <div className="form-item">
+            <input type="text" id="tema" autoComplete="off" required />
+            <label htmlFor="tema">Tema</label>
+          </div>
 
-        <button className="btn">Enviar</button>
-      </form>
+          <div className="full-width form-item area">
+            <input className="area" type="message" id="message" autoComplete="off" required />
+            <label htmlFor="message">Mensaje</label>
+          </div>
+
+
+          <div className="full-width buttonContent">
+            <button className="button">
+              <span className="button-content">Enviar</span>
+            </button>
+          </div>
+
+        </form>
+      </div>
     </>
   );
 }
 
-
 export default Contact;
+
+
+
+
 

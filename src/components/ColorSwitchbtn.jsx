@@ -20,6 +20,8 @@ function ColorSwitchbtn() {
       if (backgroundColor === 'rgb(226, 230, 235)') {
         // Hacer modo oscuro
 
+        root.style.setProperty('--color-input', '#fff');
+        root.style.setProperty('--backgroud-label', '#1a1a21');
         root.style.setProperty('--dark-color', '#1a1a21');
         root.style.setProperty('--card-color', '#fff');
         bodyElement.style.backgroundColor = "#151a1f";
@@ -32,12 +34,14 @@ function ColorSwitchbtn() {
         glencoreFilter[0].classList.add("transparentImgsvg");
         glencoreFilter[1].classList.remove("transparentImgsvg");
         card.style.backgroundColor = '#151a1f';
-        for (let i = 0; i < links.length; i++) {
-          links[i].style.color = '#ffffff';
+        for (let i = 1; i < links.length; i++) {
+          links[i-1].style.color = '#ffffff';
         }
       } else {
         // Hacer modo claro
 
+        root.style.setProperty('--color-input', '#000');
+        root.style.setProperty('--backgroud-label', '#f6f8fc');
         root.style.setProperty('--dark-color', '#e2e6eb');
         root.style.setProperty('--card-color', '#000');
         bodyElement.style.backgroundColor = "#fff";

@@ -9,7 +9,7 @@
 
 .gridAbout p {
   padding-bottom: 2vh;
-  font-size: 1.7vw;
+  font-size: 1.7vw ;
   text-align: center;
 }
 
@@ -62,9 +62,8 @@ ul {
 
 @media only screen and (max-width: 1199px) {
 
-  li,
-  p {
-    font-size: 4vw !important;
+  li,p {
+    font-size: 3vw !important;
     padding: 10px 0;
   }
 
