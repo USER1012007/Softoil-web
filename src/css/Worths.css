@@ -38,6 +38,7 @@
   display: grid;
   justify-items: center;
   padding: 0 !important;
+  padding-bottom: 18px !important;
 }
 
 .gridWorth {

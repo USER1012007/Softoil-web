@@ -62,12 +62,6 @@ li {
   align-content: center;
 }
 
-/**/
-/* .empty div { */
-/*   width: 94%; */
-/*   border: 1px solid #0080c1; */
-/* } */
-
 @media only screen and (max-width: 1199px) {
 
   .TextboxTitle, p, li {
